@@ -1,0 +1,130 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.teamsearch-nav {
+  padding: 0 2em 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamsearch-logo {
+  height: 70px;
+}
+
+.teamsearch-navItem {
+  position: relative;
+  display: flex;
+  gap: 10em;
+}
+
+.teamsearch-navItem input {
+  width: 300px;
+  border-radius: 20px;
+  padding-left: 2.5em;
+  border: 1px solid #ddd;
+}
+
+.teamsearch-icon {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.teamsearch-navItem img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.teamsearch-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.teamsearch-mainSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.teamsearch-mainSection-row {
+  padding: 1em 0;
+}
+
+.row-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+.row-left-item {
+  width: 100%;
+  height: 100%;
+}
+
+.row-left > .row-left-item:first-child {
+  height: 100%;
+  width: 90%;
+  max-width: 600px;
+  max-height: 450px;
+
+  justify-self: center;
+  /* transform: rotate(-5deg); */
+}
+
+.row-left > .row-left-item:last-child {
+  height: 100%;
+  width: 100%;
+  max-width: 640px;
+  max-height: 375px;
+  align-self: flex-end;
+  /* transform: rotate(2deg); */
+}
+
+.row-right {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 0.8fr;
+  gap: 1em;
+}
+
+.row-right > .row-right-item:first-child {
+  max-width: 640px;
+  max-height: 360px;
+  /* transform: rotate(3deg); */
+}
+.row-right > .row-right-item:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  justify-self: flex-end;
+  /* transform: rotate(-3deg); */
+}
+.row-right > .row-right-item:last-child {
+  height: 100%;
+  width: 80%;
+  justify-self: flex-end;
+  max-width: 511px;
+  max-height: 310px;
+  align-self: flex-end;
+  /* transform: rotate(4deg); */
+}
+
+.row-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
