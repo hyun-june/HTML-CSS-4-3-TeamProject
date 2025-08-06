@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+	.container-fluid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 600px; /* 높이 대신 최소 높이 */
+		padding-bottom: 30px; /* 하단 여백 추가 */
+	}
+	.profile-row,
+	.advantage-row {
+		flex-grow: 1;
+		min-height: 240px;
+		height: 50%;
+	}
+	.profile-card,
+	.advantage-card {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.advantage-row .container-fluid {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 767px) {
+	.container-fluid {
+		height: auto;
+		display: block;
+	}
+	.profile-row,
+	.advantage-row,
+	.profile-card,
+	.advantage-card {
+		min-height: unset;
+		height: auto;
+	}
+	.advantage-row .container-fluid {
+		margin-top: 10px;
+	}
+}
