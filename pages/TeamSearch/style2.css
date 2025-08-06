@@ -14,11 +14,11 @@
 .navbar .navbar-toggler {
 	color: #f5f5f5 !important;
 }
-main {
+.main-body {
 	width: 100%;
 }
 
-footer {
+.footer-All {
 	width: 100%;
 	margin: 40px auto 0;
 	padding: 60px 0 120px;
