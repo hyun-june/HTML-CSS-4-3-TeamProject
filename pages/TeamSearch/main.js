@@ -22,6 +22,10 @@ filterItems.forEach((item) => {
     const selectedValue = item.dataset.value;
     categoryFilter.textContent = selectedValue;
 
-    filterStatus = false;
+    setTimeout(() => {
+      teamFilterList.style.height = "0px";
+      teamFilterList.style.opacity = 0;
+      filterStatus = false;
+    });
   });
 });
