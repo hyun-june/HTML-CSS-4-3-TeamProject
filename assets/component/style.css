@@ -23,6 +23,7 @@
 		margin-top: 10px;
 	}
 }
+
 @media (max-width: 767px) {
 	.container-fluid {
 		height: auto;
@@ -38,4 +39,44 @@
 	.advantage-row .container-fluid {
 		margin-top: 10px;
 	}
+}
+
+@media (min-width: 992px) {
+	.modal-lg-custom {
+		max-width: 900px;
+	}
+}
+@media (max-width: 991.98px) {
+	.modal-lg-custom {
+		max-width: 98vw;
+	}
+}
+
+.profile-name {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.profile-img {
+	max-width: 340px !important;
+	max-height: 340px !important;
+}
+
+.profile-card {
+	max-width: 370px !important;
+	min-width: 260px;
+}
+
+.profile-row {
+	margin-top: 0.5rem !important;
+}
+
+.advantage-card {
+	width: 100% !important;
+	max-width: none !important;
+	min-width: 0 !important;
 }
