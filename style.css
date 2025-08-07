@@ -1,16 +1,16 @@
-@import 'reset.css';
+@import "reset.css";
 
 .navbar-brand img {
-	max-height: 40px;
-	width: auto;
+  max-height: 40px;
+  width: auto;
 }
 .navbar {
-	background-color: rgb(0, 0, 0) !important;
+  background-color: rgb(0, 0, 0) !important;
 }
 .navbar .nav-link,
 .navbar .navbar-brand,
 .navbar .navbar-toggler {
-	color: #f5f5f5 !important;
+  color: #f5f5f5 !important;
 }
 
 .main-body {
@@ -197,32 +197,32 @@
 	color: whitesmoke;
 }
 .footer-bottom .company-info {
-	word-break: keep-all;
-	white-space: normal;
-	font-size: 14px;
-	flex-basis: 0;
-	flex-grow: 1;
-	min-width: 0;
+  word-break: keep-all;
+  white-space: normal;
+  font-size: 14px;
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
 }
 
 .footer-bottom .logo img {
-	height: auto;
-	display: block;
-	margin: 0 auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-bottom .row {
-	gap: 2px;
+  gap: 2px;
 }
 
 @media (max-width: 768px) {
-	.footer-bottom .row {
-		flex-direction: column;
-		gap: 0;
-	}
-	.footer-bottom .logo,
-	.footer-bottom .company-info {
-		text-align: center;
-		margin-bottom: 10px;
-	}
+  .footer-bottom .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-bottom .logo,
+  .footer-bottom .company-info {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }

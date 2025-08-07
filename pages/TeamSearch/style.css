@@ -1,7 +1,9 @@
-body {
+.teamsearch-container {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: black;
+  color: white;
 }
 
 .teamsearch-nav {
@@ -35,6 +37,7 @@ body {
   left: 3%;
   top: 50%;
   transform: translateY(-50%);
+  color: black;
 }
 
 .teamsearch-navItem img {
@@ -46,32 +49,33 @@ body {
 .teamsearch-main {
   display: flex;
   flex-direction: column;
-  margin: 2em 0;
-  padding: 0;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: content-box;
+  margin: 1em 0;
   position: relative;
-  flex-grow: 1;
 }
 
 .teamsearch-filter {
-  cursor: pointer;
   position: absolute;
-  left: 10%;
+  top: 0;
+  justify-items: flex-end;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  right: 0;
 }
 
 .teamsearch-category {
   border-bottom: 1px solid black;
   width: 80px;
   position: relative;
+  cursor: pointer;
+  text-align: center;
 }
 
 .teamsearch-category span {
   position: absolute;
-  right: 0;
+  right: -10px;
   top: 0;
 }
+
 .teamsearch-filterList {
   list-style: none;
   padding: 0;
@@ -80,11 +84,18 @@ body {
   transition: opacity 0.3s ease, height 0.3s ease;
   overflow: hidden;
   display: block;
+  max-width: 80px;
+  position: absolute;
+  z-index: 100;
 }
 
 .teamsearch-filterList li {
   border-bottom: 1px solid #ddd;
-  width: 100%;
+  width: 80px;
+  z-index: 3;
+  background-color: white;
+  color: black;
+  text-align: center;
 }
 
 .teamsearch-cubeContainer {
@@ -93,6 +104,8 @@ body {
   grid-template-rows: 1fr 1fr;
   gap: 3em;
   height: 100%;
+  margin: 1em 0;
+  padding: 2em 0 1em 0;
 }
 
 .teamsearch-cube {
@@ -101,8 +114,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 3px;
+  gap: 20px;
   width: max-content;
+  position: relative;
 }
 
 .teamsearch-cube:first-child,
@@ -122,6 +136,7 @@ body {
   justify-content: center;
   width: clamp(150px, 14vh, 200px);
   position: relative;
+  z-index: 1;
 }
 
 .cube-item-name {
@@ -137,7 +152,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.8);
+  filter: brightness(0.7);
   transition: all 0.5s ease;
   border-radius: 10px;
 }
@@ -159,4 +174,34 @@ body {
 .cube-item:hover .cube-item-info {
   opacity: 1;
   visibility: visible;
+}
+
+.cube-category {
+  width: 50px;
+  height: 30px;
+  box-shadow: 0px 0px 10px 1px black;
+  position: absolute;
+  top: 50;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 0;
+}
+
+.teamsearch-siteInfo {
+  justify-items: flex-end;
+  height: auto;
+}
+
+.teamsearch-siteInfo p {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  box-shadow: 0px 0px 5px 1px #ddd;
+}
+
+@media screen and (max-width: 430px) {
 }
