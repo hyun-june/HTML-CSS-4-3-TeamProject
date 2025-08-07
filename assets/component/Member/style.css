@@ -47,6 +47,17 @@
   text-align: right;
 }
 
+.carrer-item.reverse {
+  .carrer-description {
+    left: -20px;
+    position: relative;
+  }
+
+  .carrer-skills {
+    justify-content: flex-end;
+  }
+}
+
 .carrer-inner {
   display: flex;
   flex-direction: column;
