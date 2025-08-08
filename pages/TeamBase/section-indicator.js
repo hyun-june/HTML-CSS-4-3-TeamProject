@@ -1,6 +1,8 @@
 const sections = document.querySelectorAll("section");
 const dots = document.querySelectorAll(".dot");
 
+const thresholdValue = window.innerWidth <= 768 ? 0.4 : 0.6;
+
 // Scroll into view on click
 dots.forEach(dot => {
   dot.addEventListener("click", () => {
@@ -18,6 +20,6 @@ const observer = new IntersectionObserver((entries) => {
       if (activeDot) activeDot.classList.add("active");
     }
   });
-}, { threshold: 0.6 });
+}, { threshold: thresholdValue });
 
 sections.forEach(section => observer.observe(section));
