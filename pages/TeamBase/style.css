@@ -127,6 +127,7 @@
   flex: 1;
   height: 100%;
   border-radius: 4px;
+  color: whitesmoke;
 }
 
 @media (max-width: 767.98px) {
@@ -345,4 +346,48 @@
   background-color: white;
   width: 2px;
   height: 8em;
+}
+
+@media screen and (max-width: 430px) {
+  .carrer-item {
+    flex-direction: column-reverse !important; /* reverse도 덮어씀 */
+    align-items: center;
+    text-align: center;
+  }
+
+  .carrer-item.reverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .carrer-inner {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 100px; /* 필요에 따라 값 조정 */
+  }
+
+  .carrer-description {
+    width: 90%;
+    min-height: auto;
+    margin: 0 auto; /* 좌우 마진으로 가운데 정렬 */
+    text-align: center; /* 텍스트도 가운데 */
+    position: relative;
+    left: 0.1px;
+  }
+
+  .carrer-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carrer-skills {
+    justify-content: center;
+  }
+
+  .link_mail {
+    display: none;
+  }
+
+  .dot-nav {
+    display: none;
+  }
 }
