@@ -1,236 +1,238 @@
-@import 'reset.css';
+@import "reset.css";
 
 @font-face {
-	font-family: 'PFStardustS';
-	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/PFStardustS.woff2')
-		format('woff2');
-	font-weight: 400;
-	font-style: normal;
+  font-family: "MaplestoryOTFBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .navbar-brand img {
-	max-height: 40px;
-	width: auto;
+  max-height: 40px;
+  width: auto;
 }
 .navbar {
-	background: linear-gradient(to bottom, #000, #111111) !important;
+  background: linear-gradient(to bottom, #000, #111111) !important;
 }
 .navbar .nav-link,
 .navbar .navbar-brand,
 .navbar .navbar-toggler {
-	color: #f5f5f5 !important;
+  color: #f5f5f5 !important;
 }
 
 .nav-link:hover {
-	color: #32cd32 !important;
+  color: #32cd32 !important;
 }
+
 .main-body {
-	width: 100%;
-	background-image: url(assets/img/MainImage.png);
-	background-size: cover;
-	background-position: center;
-	height: 95vh;
-	color: black;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  background-image: url(assets/img/MainImage.png);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "MaplestoryOTFBold";
 }
 
 .main-Main-All {
-	position: relative;
-	width: 90%;
-	max-width: 1200px;
-	height: 80vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .center-group {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .main-Logo-Center img {
-	max-height: clamp(150px, 25vw, 300px);
-	width: auto;
+  max-height: clamp(150px, 25vw, 300px);
+  width: auto;
 }
 
 .ment1 {
-	position: absolute;
-	top: 9%;
-	left: 8%;
-	font-size: clamp(30px, 6vw, 60px);
-	background-color: whitesmoke;
-	border-radius: 20px;
-	padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
-	text-align: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	white-space: nowrap;
+  position: absolute;
+  top: 9%;
+  left: 8%;
+  font-size: clamp(30px, 6vw, 60px);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .ment2 {
-	display: inline-block;
-	position: absolute;
-	top: 53%;
-	right: 3%;
-	font-size: clamp(30px, 6vw, 60px);
-	background-color: whitesmoke;
-	border-radius: 20px;
-	padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
-	text-align: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out, transform 0.3s ease;
-	white-space: nowrap;
-	color: #000;
+  display: inline-block;
+  position: absolute;
+  top: 53%;
+  right: 3%;
+  font-size: clamp(30px, 6vw, 60px);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+  white-space: nowrap;
+  color: #000;
 }
 
 .click-Motion {
-	position: absolute;
-	font-size: 2.5rem;
-	top: 65%;
-	right: 5%;
-	z-index: 10;
-	visibility: hidden;
-	opacity: 0;
-	animation: blink 1s infinite;
-	transition: opacity 0.8s ease-in-out, visibility 0s linear 0s;
+  position: absolute;
+  font-size: 2.5rem;
+  top: 65%;
+  right: 5%;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  animation: blink 1s infinite;
+  transition: opacity 0.8s ease-in-out, visibility 0s linear 0s;
 }
 @keyframes blink {
-	0%,
-	100% {
-		color: #70ff9f;
-		background-color: transparent;
-	}
-	50% {
-		color: #ce64ff;
-		padding-top: 3px;
-	}
+  0%,
+  100% {
+    color: #70ff9f;
+    background-color: transparent;
+  }
+  50% {
+    color: #ce64ff;
+    padding-top: 3px;
+  }
 }
 
 .ment2:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .ment3 {
-	position: absolute;
-	bottom: 14%;
-	left: 35%;
-	transform: translateX(-50%);
-	font-size: clamp(30px, 6vw, 60px);
-	background-color: whitesmoke;
-	border-radius: 20px;
-	padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
-	text-align: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	white-space: nowrap;
+  position: absolute;
+  bottom: 14%;
+  left: 35%;
+  transform: translateX(-50%);
+  font-size: clamp(30px, 6vw, 60px);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 /* 모바일 반응형 */
 @media (max-width: 768px) {
-	.main-Main-All {
-		width: 95%;
-		height: 100vh;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 20px;
-	}
+  .main-Main-All {
+    width: 95%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
-	.ment1 {
-		position: static;
-		transform: none;
-		order: 1;
-		margin: 0;
-	}
+  .ment1 {
+    position: static;
+    transform: none;
+    order: 1;
+    margin: 0;
+  }
 
-	.center-group {
-		position: static;
-		transform: none;
-		order: 2;
-		opacity: 1;
-	}
+  .center-group {
+    position: static;
+    transform: none;
+    order: 2;
+    opacity: 1;
+  }
 
-	.ment2 {
-		position: static;
-		transform: none;
-		right: auto;
-		top: auto;
-		order: 3;
-		margin: 0;
-	}
+  .ment2 {
+    position: static;
+    transform: none;
+    right: auto;
+    top: auto;
+    order: 3;
+    margin: 0;
+  }
 
-	.ment3 {
-		position: static;
-		transform: none;
-		bottom: auto;
-		left: auto;
-		order: 4;
-		margin: 0;
-	}
+  .ment3 {
+    position: static;
+    transform: none;
+    bottom: auto;
+    left: auto;
+    order: 4;
+    margin: 0;
+  }
 
-	/* 모바일에서 커서 숨기기 */
-	.click-Motion {
-		visibility: hidden;
-		opacity: 0;
-	}
+  /* 모바일에서 커서 숨기기 */
+  .click-Motion {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 480px) {
-	.main-body {
-		height: 100vh;
-	}
+  .main-body {
+    height: 100vh;
+  }
 
-	.ment1,
-	.ment2,
-	.ment3 {
-		font-size: clamp(20px, 5vw, 35px);
-		padding: clamp(8px, 1.5vw, 15px) clamp(15px, 3vw, 30px);
-	}
+  .ment1,
+  .ment2,
+  .ment3 {
+    font-size: clamp(20px, 5vw, 35px);
+    padding: clamp(8px, 1.5vw, 15px) clamp(15px, 3vw, 30px);
+  }
 }
 
 .footer-All {
-	width: 100%;
-	margin: 0 auto 0;
-	padding: 60px 0 120px;
-	background: linear-gradient(to bottom, #111111, #000);
-	color: whitesmoke;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 60px 0 120px;
+  background: linear-gradient(to bottom, #111111, #000);
+  color: whitesmoke;
 }
 .footer-bottom .company-info {
-	word-break: keep-all;
-	white-space: normal;
-	font-size: 14px;
-	flex-basis: 0;
-	flex-grow: 1;
-	min-width: 0;
+  word-break: keep-all;
+  white-space: normal;
+  font-size: 14px;
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
 }
 
 .footer-bottom .logo img {
-	height: auto;
-	display: block;
-	margin: 0 auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-bottom .row {
-	gap: 2px;
+  gap: 2px;
 }
 
 @media (max-width: 768px) {
-	.footer-bottom .row {
-		flex-direction: column;
-		gap: 0;
-	}
-	.footer-bottom .logo,
-	.footer-bottom .company-info {
-		text-align: center;
-		margin-bottom: 10px;
-	}
+  .footer-bottom .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-bottom .logo,
+  .footer-bottom .company-info {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
