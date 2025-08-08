@@ -123,11 +123,13 @@
 }
 
 .member-info {
-  border: 1px solid white;
-  flex: 1;
-  height: 100%;
+  /* flex: 1; */
+  align-self: flex-start;
+  /* border: 1px solid white; */
+  /* height: 100%; */
   border-radius: 4px;
   color: whitesmoke;
+  padding: 2em;
 }
 
 @media (max-width: 767.98px) {
