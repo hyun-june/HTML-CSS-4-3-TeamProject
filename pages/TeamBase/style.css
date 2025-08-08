@@ -1,9 +1,6 @@
-.section-about {
-  /* 추가 스타일 필요할 경우 여기서만 */
-}
-
+/* ============ Section About 스타일 ============ */
 .team-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -13,9 +10,7 @@
 
   font-size: 1.5rem;
   color: white;
-  /*background-color: rgba(0, 0, 0, 0.5);*/
   padding: 5px 12px;
-  /*border-radius: 8px;*/
 }
 
 .team-name h2 {
@@ -81,6 +76,264 @@
   font-style: italic;
 }
 
+/* ============ Section Member 스타일 ============ */
+.member-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+}
+
+.member-box {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.member-img-box {
+  border: 1px solid white;
+  width: 250px;
+  border-radius: 4px;
+}
+
+.member-img-box img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.member-info {
+  border: 1px solid white;
+  flex: 1;
+  height: 100%;
+  border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+  .member-main {
+    margin-top: 350px;
+    margin-bottom: 320px;
+  }
+
+  .member-box {
+    flex-direction: column;
+  }
+
+  .member-info {
+    width: 100%;
+    min-height: 250px; /* 원하는 만큼 */
+  }
+}
+
+/* ============ Modal 스타일 ============ */
+@media (min-width: 768px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px; /* 높이 대신 최소 높이 */
+    padding-bottom: 30px; /* 하단 여백 추가 */
+  }
+  .profile-row,
+  .advantage-row {
+    flex-grow: 1;
+    min-height: 240px;
+    height: 50%;
+  }
+  .profile-card,
+  .advantage-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .advantage-row .container-fluid {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    height: auto;
+    display: block;
+  }
+  .profile-row,
+  .advantage-row,
+  .profile-card,
+  .advantage-card {
+    min-height: unset;
+    height: auto;
+  }
+  .advantage-row .container-fluid {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg-custom {
+    max-width: 900px;
+  }
+}
+@media (max-width: 991.98px) {
+  .modal-lg-custom {
+    max-width: 98vw;
+  }
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.profile-img {
+  max-width: 340px !important;
+  max-height: 340px !important;
+}
+
+.profile-card {
+  max-width: 370px !important;
+  min-width: 260px;
+}
+
+.profile-row {
+  margin-top: 0.5rem !important;
+}
+
+.advantage-card {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+}
+
+/* ============ Section Career 스타일 ============ */
+.carrer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.carrer-item {
+  display: flex;
+  justify-content: center;
+  max-height: 485px;
+}
+
+.carrer-item.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.carrer-item.reverse .carrer-description {
+  position: relative;
+  right: 30px;
+}
+
+.carrer-item.reverse .carrer-skills {
+  justify-content: flex-end;
+}
+
+.carrer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.carrer-description {
+  display: flex;
+  justify-content: center; /* 좌우 중앙 */
+  align-items: center; /* 상하 중앙 */
+  text-align: left;
+
+  background-color: whitesmoke;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 1em 1.5em;
+  position: relative;
+  white-space: normal;
+  width: 450px;
+  min-height: 250px;
+  z-index: 2;
+}
+
+.carrer-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  list-style: none;
+  white-space: wrap;
+  padding: 0;
+}
+
+.carrer-img {
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  width: 490px;
+  z-index: 1;
+  filter: brightness(0.8);
+}
+
+.carrer-img:hover {
+  filter: brightness(1);
+}
+
+.carrer-img img {
+  border-radius: 5px;
+  height: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .carrer-item {
+    flex-direction: column-reverse !important; /* reverse도 덮어씀 */
+    align-items: center;
+    text-align: center;
+  }
+
+  .carrer-item.reverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .carrer-inner {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 100px; /* 필요에 따라 값 조정 */
+  }
+
+  .carrer-description {
+    width: 90%;
+    min-height: auto;
+    margin: 0 auto; /* 좌우 마진으로 가운데 정렬 */
+    text-align: center; /* 텍스트도 가운데 */
+    position: relative;
+    left: 0.1px;
+  }
+
+  .carrer-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carrer-skills {
+    justify-content: center;
+  }
+}
+
+/* ============ Dot Nav 스타일 ============ */
 .dot-nav {
   position: fixed;
   top: 50%;
@@ -136,10 +389,24 @@
   opacity: 1;
 }
 
-.section-member {
-  /* 팀원 섹션용 커스텀 스타일 */
+/* ============ Link Mail 스타일 ============ */
+.link_mail {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 4em;
+  position: fixed;
+  z-index: 10;
 }
 
-.section-career {
-  /* 커리어 섹션 스타일 */
+.link_mail .fa-envelope {
+  color: white;
+}
+
+.link_mail:after {
+  content: "";
+  background-color: white;
+  width: 2px;
+  height: 8em;
 }
