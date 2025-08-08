@@ -1,5 +1,13 @@
 @import 'reset.css';
 
+@font-face {
+  font-family: "PFStardustS";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/PFStardustS.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navbar-brand img {
 	max-height: 40px;
 	width: auto;
@@ -14,6 +22,7 @@
 }
 
 .main-body {
+
 	width: 100%;
 	background-image: url(assets/img/MainImage.png);
 	background-size: cover;
@@ -24,34 +33,36 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 }
 
 .main-Main-All {
-	position: relative;
-	width: 90%;
-	max-width: 1200px;
-	height: 80vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .center-group {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .main-Logo-Center img {
-	max-height: clamp(150px, 25vw, 300px);
-	width: auto;
+  max-height: clamp(150px, 25vw, 300px);
+  width: auto;
 }
 
 .ment1 {
+
 	position: absolute;
 	top: 9%;
 	left: 8%;
@@ -79,8 +90,11 @@
 	transition: opacity 0.3s ease-in-out, transform 0.3s ease;
 	white-space: nowrap;
 	color: #000;
+
 }
+
 .click-Motion {
+
 	position: absolute;
 	font-size: 2.5rem;
 	top: 65%;
@@ -103,11 +117,13 @@
 	}
 }
 
+
 .ment2:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .ment3 {
+
 	position: absolute;
 	bottom: 14%;
 	left: 35%;
@@ -120,77 +136,80 @@
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
 	white-space: nowrap;
+
 }
 
 /* 모바일 반응형 */
 @media (max-width: 768px) {
-	.main-Main-All {
-		width: 95%;
-		height: 100vh;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 20px;
-	}
+  .main-Main-All {
+    width: 95%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
-	.ment1 {
-		position: static;
-		transform: none;
-		order: 1;
-		margin: 0;
-	}
+  .ment1 {
+    position: static;
+    transform: none;
+    order: 1;
+    margin: 0;
+  }
 
-	.center-group {
-		position: static;
-		transform: none;
-		order: 2;
-		opacity: 1;
-	}
+  .center-group {
+    position: static;
+    transform: none;
+    order: 2;
+    opacity: 1;
+  }
 
-	.ment2 {
-		position: static;
-		transform: none;
-		right: auto;
-		top: auto;
-		order: 3;
-		margin: 0;
-	}
+  .ment2 {
+    position: static;
+    transform: none;
+    right: auto;
+    top: auto;
+    order: 3;
+    margin: 0;
+  }
 
-	.ment3 {
-		position: static;
-		transform: none;
-		bottom: auto;
-		left: auto;
-		order: 4;
-		margin: 0;
-	}
+  .ment3 {
+    position: static;
+    transform: none;
+    bottom: auto;
+    left: auto;
+    order: 4;
+    margin: 0;
+  }
 
-	/* 모바일에서 커서 숨기기 */
-	.click-Motion {
-		visibility: hidden;
-		opacity: 0;
-	}
+  /* 모바일에서 커서 숨기기 */
+  .click-Motion {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 480px) {
-	.main-body {
-		height: 100vh;
-	}
+  .main-body {
+    height: 100vh;
+  }
 
-	.ment1,
-	.ment2,
-	.ment3 {
-		font-size: clamp(20px, 5vw, 35px);
-		padding: clamp(8px, 1.5vw, 15px) clamp(15px, 3vw, 30px);
-	}
+  .ment1,
+  .ment2,
+  .ment3 {
+    font-size: clamp(20px, 5vw, 35px);
+    padding: clamp(8px, 1.5vw, 15px) clamp(15px, 3vw, 30px);
+  }
 }
 
 .footer-All {
+
 	width: 100%;
 	margin: 0 auto 0;
 	padding: 60px 0 120px;
 	background: linear-gradient(to bottom, #111111, #000);
 	color: whitesmoke;
+
 }
 .footer-bottom .company-info {
 	word-break: keep-all;

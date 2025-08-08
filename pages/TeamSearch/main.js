@@ -7,7 +7,7 @@ let filterStatus = false;
 
 teamFilter.addEventListener("click", () => {
   if (!filterStatus) {
-    teamFilterList.style.height = "80px";
+    teamFilterList.style.height = "150px";
     teamFilterList.style.opacity = 1;
     filterStatus = true;
   } else {
