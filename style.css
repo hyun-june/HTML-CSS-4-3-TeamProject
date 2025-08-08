@@ -1,5 +1,13 @@
 @import "reset.css";
 
+@font-face {
+  font-family: "PFStardustS";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/PFStardustS.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navbar-brand img {
   max-height: 40px;
   width: auto;
@@ -24,6 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "PFStardustS";
 }
 
 .main-Main-All {
