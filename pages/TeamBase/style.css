@@ -1,5 +1,3 @@
-/* ============ Section About 스타일 ============ */
-
 @font-face {
   font-family: "SF_IceLemon";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceLemon.woff")
@@ -13,6 +11,32 @@
   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
 }
 
+/* ============ Navbar 스타일 ============ */
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+.navbar {
+  background: linear-gradient(to bottom, #000, #111111) !important;
+}
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .navbar-toggler {
+  font-family: "MaruBuri";
+  color: #f5f5f5 !important;
+}
+
+.nav-link:hover {
+  color: #da70d6 !important;
+}
+
+.nav-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* ============ Section About 스타일 ============ */
 .sub-title {
   font-family: "SF_IceLemon";
 }
@@ -101,7 +125,7 @@
   display: flex;
   flex-direction: column;
   gap: 3em;
-  justify-content: center;
+  align-items: stretch;
 }
 
 .member-box {
@@ -123,10 +147,7 @@
 }
 
 .member-info {
-  /* flex: 1; */
   align-self: flex-start;
-  /* border: 1px solid white; */
-  /* height: 100%; */
   border-radius: 4px;
   color: whitesmoke;
   padding: 2em;
@@ -134,16 +155,20 @@
 
 @media (max-width: 767.98px) {
   .member-main {
-    margin-top: 350px;
-    margin-bottom: 320px;
   }
 
   .member-box {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .member-img-box {
+    margin: 0 auto; /* 가운데 정렬 */
   }
 
   .member-info {
     width: 100%;
+    min-height: auto;
     min-height: 250px; /* 원하는 만큼 */
   }
 }
@@ -153,13 +178,12 @@
   display: flex;
   flex-direction: column;
   gap: 5em;
-  font-family: "MaruBuri";
 }
 
 .carrer-item {
   display: flex;
   justify-content: center;
-  max-height: 485px;
+  max-height: none;
 }
 
 .carrer-item.reverse {
@@ -181,7 +205,7 @@
   flex-direction: column;
   gap: 1em;
   justify-content: space-between;
-  width: 400px;
+  width: 400px; /* 프로젝트 설명란 늘리기 */
 }
 
 .carrer-description {
@@ -245,12 +269,22 @@
 
   .carrer-item.reverse {
     flex-direction: column-reverse !important;
+    text-align: center;
+  }
+
+  .carrer-item.reverse .carrer-description {
+    position: static; /* relative 해제 */
+    right: auto;
+    left: auto; /* 오프셋 제거 */
+    width: 90%;
+    margin: 0 auto; /* 박스 자체 가운데 */
+    text-align: center; /* 텍스트도 가운데 */
   }
 
   .carrer-inner {
     width: 100%;
     align-items: center;
-    margin-bottom: 100px; /* 필요에 따라 값 조정 */
+    margin-top: 30px;
   }
 
   .carrer-description {
@@ -258,8 +292,7 @@
     min-height: auto;
     margin: 0 auto; /* 좌우 마진으로 가운데 정렬 */
     text-align: center; /* 텍스트도 가운데 */
-    position: relative;
-    left: 0.1px;
+    position: static;
   }
 
   .carrer-img {
@@ -350,43 +383,15 @@
   height: 8em;
 }
 
-@media screen and (max-width: 430px) {
-  .carrer-item {
-    flex-direction: column-reverse !important; /* reverse도 덮어씀 */
-    align-items: center;
-    text-align: center;
-  }
-
-  .carrer-item.reverse {
-    flex-direction: column-reverse !important;
-  }
-
-  .carrer-inner {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 100px; /* 필요에 따라 값 조정 */
-  }
-
-  .carrer-description {
-    width: 90%;
-    min-height: auto;
-    margin: 0 auto; /* 좌우 마진으로 가운데 정렬 */
-    text-align: center; /* 텍스트도 가운데 */
-    position: relative;
-    left: 0.1px;
-  }
-
-  .carrer-img {
-    width: 100%;
-    height: auto;
-  }
-
-  .carrer-skills {
-    justify-content: center;
-  }
-
+@media (max-width: 768px) {
   .link_mail {
-    display: none;
+    left: auto; /* 기존 left 해제 */
+    right: 1em; /* 오른쪽 여백 */
+    bottom: 1em; /* 아래 여백 */
+  }
+
+  .link_mail:after {
+    display: none; /* 세로선 제거 */
   }
 
   .dot-nav {
