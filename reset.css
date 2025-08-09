@@ -1,54 +1,61 @@
 * {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  color: inherit;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
 }
 *,
 :after,
 :before {
-  box-sizing: border-box;
-  flex-shrink: 0;
+	box-sizing: border-box;
+	flex-shrink: 0;
+}
+@font-face {
+	font-family: 'MaruBuri';
+	src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+}
+.nav-item {
+	font-family: 'MaruBuri', Arial, Helvetica, sans-serif;
 }
 :root {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  cursor: default;
-  line-height: 1.5;
-  overflow-wrap: break-word;
-  -moz-tab-size: 4;
-  tab-size: 4;
-  overflow-x: hidden;
-  overflow-y: scroll;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	cursor: default;
+	line-height: 1.5;
+	overflow-wrap: break-word;
+	-moz-tab-size: 4;
+	tab-size: 4;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 html,
 body {
-  height: 100vh;
+	height: 100vh;
 }
 img,
 picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 button {
-  background: none;
-  border: 0;
-  cursor: pointer;
+	background: none;
+	border: 0;
+	cursor: pointer;
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 li {
-  list-style: none;
+	list-style: none;
 }
