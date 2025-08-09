@@ -1,0 +1,137 @@
+.member-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+}
+
+.member-box {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.member-img-box {
+  border: 1px solid black;
+  width: 250px;
+  border-radius: 4px;
+}
+
+.member-img-box img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.member-info {
+  border: 1px solid black;
+  flex: 1;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.carrer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.carrer-item {
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+}
+
+.carrer-item.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.carrer-item.reverse {
+  .carrer-description {
+    left: -20px;
+    position: relative;
+  }
+
+  .carrer-skills {
+    justify-content: flex-end;
+  }
+}
+
+.carrer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.carrer-description {
+  background-color: #3f3d56;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 1em 1.5em;
+  position: relative;
+  white-space: pre-line;
+  color: white;
+  width: 430px;
+  min-height: 250px;
+  z-index: 2;
+}
+
+.carrer-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  list-style: none;
+  white-space: wrap;
+  padding: 0;
+}
+
+.carrer-img {
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  width: 490px;
+  z-index: 1;
+  filter: brightness(0.8);
+}
+
+.carrer-img:hover {
+  filter: brightness(1);
+}
+
+.carrer-img img {
+  border-radius: 5px;
+  height: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.link_mail {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 4em;
+  position: fixed;
+  z-index: 10;
+}
+
+.link_mail .fa-envelope {
+  color: pink;
+}
+
+.link_mail:after {
+  content: "";
+  background-color: black;
+  width: 2px;
+  height: 8em;
+}
