@@ -30,6 +30,15 @@
   color: #da70d6 !important;
 }
 
+.navbar-nav {
+  flex-direction: row !important;
+  align-items: center; /* 세로 가운데 정렬 */
+}
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
 .nav-item img {
   width: 40px;
   height: 40px;

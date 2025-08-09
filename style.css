@@ -1,325 +1,327 @@
-@import 'reset.css';
+@import "reset.css";
 
 @font-face {
-	font-family: 'MaplestoryOTFBold';
-	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff')
-		format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "MaplestoryOTFBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .navbar-brand img {
-	max-height: 40px;
-	width: auto;
+  max-height: 40px;
+  width: auto;
 }
 .navbar {
-	background: linear-gradient(to bottom, #000, #111111) !important;
+  background: linear-gradient(to bottom, #000, #111111) !important;
 }
 .navbar .nav-link,
 .navbar .navbar-brand,
 .navbar .navbar-toggler {
-	color: #f5f5f5 !important;
+  color: #f5f5f5 !important;
 }
 
 .nav-link:hover {
-	color: #da70d6 !important;
+  color: #da70d6 !important;
 }
 
 /* 햄버거 메뉴 스타일링 */
 .navbar-toggler {
-	border: none !important;
-	padding: 4px 8px !important;
+  border: none !important;
+  padding: 4px 8px !important;
 }
 
 .navbar-toggler:focus {
-	box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f5f5f5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f5f5f5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /* 모바일에서만 메뉴가 덮이도록 설정 */
 @media (max-width: 991.98px) {
-	.navbar-collapse {
-		position: absolute !important;
-		top: 100% !important;
-		left: 0 !important;
-		right: 0 !important;
-		background: linear-gradient(to bottom, #000, #111111) !important;
-		border-top: 1px solid #333 !important;
-		z-index: 1000 !important;
-		padding: 1rem !important;
-		margin: 0 !important;
-	}
+  .navbar-collapse {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: linear-gradient(to bottom, #000, #111111) !important;
+    border-top: 1px solid #333 !important;
+    z-index: 1000 !important;
+    padding: 1rem !important;
+    margin: 0 !important;
+  }
 
-	.navbar-nav {
-		width: 100% !important;
-	}
+  .navbar-nav {
+    width: 100% !important;
+  }
 
-	.navbar-nav .nav-item {
-		text-align: center !important;
-		padding: 0.5rem 0 !important;
-	}
+  .navbar-nav .nav-item {
+    text-align: center !important;
+    padding: 0.5rem 0 !important;
+  }
 }
 
 .main-body {
-	width: 100%;
-	background-image: url(assets/img/MainImage.png);
-	background-size: cover;
-	background-position: center;
-	height: 95vh;
-	color: black;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'MaplestoryOTFBold';
+  width: 100%;
+  background-image: url(assets/img/MainImage.png);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "MaplestoryOTFBold";
 }
 
 .main-Main-All {
-	position: relative;
-	width: 90%;
-	max-width: 1200px;
-	height: 80vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .center-group {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .main-Logo-Center img {
-	max-height: clamp(150px, 25vw, 300px);
-	width: auto;
+  max-height: clamp(150px, 25vw, 300px);
+  width: auto;
 }
 
 .ment1 {
-	position: absolute;
-	top: 9%;
-	left: 8%;
-	font-size: clamp(30px, 6vw, 60px);
-	background-color: whitesmoke;
-	border-radius: 20px;
-	padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
-	text-align: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	white-space: nowrap;
+  position: absolute;
+  top: 9%;
+  left: 8%;
+  font-size: clamp(30px, 6vw, 60px);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .ment2 {
-	display: inline-block;
-	position: absolute;
-	top: 53%;
-	right: 3%;
-	font-size: clamp(30px, 6vw, 60px);
-	background-color: whitesmoke;
-	border-radius: 20px;
-	padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
-	text-align: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out, transform 0.3s ease;
-	white-space: nowrap;
-	color: #000;
+  display: inline-block;
+  position: absolute;
+  top: 53%;
+  right: 3%;
+  font-size: clamp(30px, 6vw, 60px);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+  white-space: nowrap;
+  color: #000;
 }
 
 .click-Motion {
-	position: absolute;
-	font-size: 2.5rem;
-	top: 65%;
-	right: 5%;
-	z-index: 10;
-	visibility: hidden;
-	opacity: 0;
-	animation: blink 1s infinite;
-	transition: opacity 0.8s ease-in-out, visibility 0s linear 0s;
+  position: absolute;
+  font-size: 2.5rem;
+  top: 65%;
+  right: 5%;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  animation: blink 1s infinite;
+  transition: opacity 0.8s ease-in-out, visibility 0s linear 0s;
 }
 @keyframes blink {
-	0%,
-	100% {
-		color: #da70d6;
-		background-color: transparent;
-	}
-	50% {
-		color: #32cd32;
-		padding-top: 3px;
-	}
+  0%,
+  100% {
+    color: #da70d6;
+    background-color: transparent;
+  }
+  50% {
+    color: #32cd32;
+    padding-top: 3px;
+  }
 }
 
 .ment2:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .ment3 {
-	position: absolute;
-	bottom: 14%;
-	left: 35%;
-	transform: translateX(-50%);
-	font-size: clamp(30px, 6vw, 60px);
-	background-color: whitesmoke;
-	border-radius: 20px;
-	padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
-	text-align: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	white-space: nowrap;
+  position: absolute;
+  bottom: 14%;
+  left: 35%;
+  transform: translateX(-50%);
+  font-size: clamp(30px, 6vw, 60px);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 /* 모바일 반응형 */
 @media (max-width: 1500px) {
-	/* 큰 중간 해상도에서 버튼 크기 조정 */
-	.main-Main-All .ment1,
-	.main-Main-All .ment2,
-	.main-Main-All .ment3 {
-		font-size: clamp(28px, 5.5vw, 55px) !important;
-		padding: clamp(10px, 2vw, 20px) clamp(18px, 4vw, 38px) !important;
-	}
+  /* 큰 중간 해상도에서 버튼 크기 조정 */
+  .main-Main-All .ment1,
+  .main-Main-All .ment2,
+  .main-Main-All .ment3 {
+    font-size: clamp(28px, 5.5vw, 55px) !important;
+    padding: clamp(10px, 2vw, 20px) clamp(18px, 4vw, 38px) !important;
+  }
 
-	/* SYNC 버튼을 로고에서 멀리 */
-	.main-Main-All .ment2 {
-		right: -4% !important;
-		top: 54% !important;
-	}
+  /* SYNC 버튼을 로고에서 멀리 */
+  .main-Main-All .ment2 {
+    right: -4% !important;
+    top: 54% !important;
+  }
 }
 
 @media (max-width: 1200px) {
-	/* 중간 해상도에서 버튼 크기 조정 */
-	.main-Main-All .ment1,
-	.main-Main-All .ment2,
-	.main-Main-All .ment3 {
-		font-size: clamp(25px, 5vw, 50px) !important;
-		padding: clamp(8px, 1.8vw, 18px) clamp(16px, 3.5vw, 35px) !important;
-	}
+  /* 중간 해상도에서 버튼 크기 조정 */
+  .main-Main-All .ment1,
+  .main-Main-All .ment2,
+  .main-Main-All .ment3 {
+    font-size: clamp(25px, 5vw, 50px) !important;
+    padding: clamp(8px, 1.8vw, 18px) clamp(16px, 3.5vw, 35px) !important;
+  }
 
-	/* SYNC 버튼을 로고에서 더 멀리 */
-	.main-Main-All .ment2 {
-		right: -8% !important;
-		top: 55% !important;
-	}
+  /* SYNC 버튼을 로고에서 더 멀리 */
+  .main-Main-All .ment2 {
+    right: -8% !important;
+    top: 55% !important;
+  }
 }
 
 @media (max-width: 1000px) {
-	/* 더 작은 해상도에서 버튼 크기 더 조정 */
-	.main-Main-All .ment1,
-	.main-Main-All .ment2,
-	.main-Main-All .ment3 {
-		font-size: clamp(22px, 4.5vw, 45px) !important;
-		padding: clamp(7px, 1.5vw, 16px) clamp(14px, 3vw, 30px) !important;
-	}
+  /* 더 작은 해상도에서 버튼 크기 더 조정 */
+  .main-Main-All .ment1,
+  .main-Main-All .ment2,
+  .main-Main-All .ment3 {
+    font-size: clamp(22px, 4.5vw, 45px) !important;
+    padding: clamp(7px, 1.5vw, 16px) clamp(14px, 3vw, 30px) !important;
+  }
 
-	/* SYNC 버튼을 더 멀리 */
-	.main-Main-All .ment2 {
-		right: -5% !important;
-		top: 58% !important;
-	}
+  /* SYNC 버튼을 더 멀리 */
+  .main-Main-All .ment2 {
+    right: -5% !important;
+    top: 58% !important;
+  }
 }
 
 @media (max-width: 768px) {
-	.main-Main-All {
-		width: 95%;
-		height: 100vh;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 20px;
-	}
+  .main-Main-All {
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
-	.ment1 {
-		position: static;
-		transform: none;
-		order: 1;
-		margin: 0;
-	}
+  .ment1 {
+    position: static;
+    transform: none;
+    order: 1;
+    margin: 0;
+  }
 
-	.center-group {
-		position: static;
-		transform: none;
-		order: 2;
-		opacity: 1;
-	}
+  .center-group {
+    position: static;
+    transform: none;
+    order: 2;
+    opacity: 1;
+  }
 
-	.ment2 {
-		position: static;
-		transform: none;
-		right: auto;
-		top: auto;
-		order: 3;
-		margin: 0;
-	}
+  .ment2 {
+    position: static;
+    transform: none;
+    right: auto;
+    top: auto;
+    order: 3;
+    margin: 0;
+  }
 
-	.ment3 {
-		position: static;
-		transform: none;
-		bottom: auto;
-		left: auto;
-		order: 4;
-		margin: 0;
-	}
+  .ment3 {
+    position: static;
+    transform: none;
+    bottom: auto;
+    left: auto;
+    order: 4;
+    margin: 0;
+  }
 
-	/* 모바일에서 커서 숨기기 */
-	.click-Motion {
-		visibility: hidden !important;
-		opacity: 0 !important;
-		display: none !important;
-	}
+  /* 모바일에서 커서 숨기기 */
+  .click-Motion {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    display: none !important;
+  }
 }
 
 @media (max-width: 480px) {
-	.main-body {
-		height: 100vh;
-	}
+  .main-body {
+    height: 100vh;
+  }
 
-	.ment1,
-	.ment2,
-	.ment3 {
-		font-size: clamp(20px, 5vw, 35px);
-		padding: clamp(8px, 1.5vw, 15px) clamp(15px, 3vw, 30px);
-	}
+  .ment1,
+  .ment2,
+  .ment3 {
+    font-size: clamp(20px, 5vw, 35px);
+    padding: clamp(8px, 1.5vw, 15px) clamp(15px, 3vw, 30px);
+  }
 }
 
 .footer-All {
-	width: 100%;
-	margin: 0 auto 0;
-	padding: 60px 0 120px;
-	background: linear-gradient(to bottom, #111111, #000);
-	color: whitesmoke;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 60px 0 120px;
+  background: linear-gradient(to bottom, #111111, #000);
+  color: whitesmoke;
 }
 .footer-bottom .company-info {
-	word-break: keep-all;
-	white-space: normal;
-	font-size: 14px;
-	flex-basis: 0;
-	flex-grow: 1;
-	min-width: 0;
+  word-break: keep-all;
+  white-space: normal;
+  font-size: 14px;
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
 }
 
 .footer-bottom .logo img {
-	height: auto;
-	display: block;
-	margin: 0 auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-bottom .row {
-	gap: 2px;
+  gap: 2px;
 }
 
 @media (max-width: 768px) {
-	.footer-bottom .row {
-		flex-direction: column;
-		gap: 0;
-	}
-	.footer-bottom .logo,
-	.footer-bottom .company-info {
-		text-align: center;
-		margin-bottom: 10px;
-	}
+  .footer-bottom .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-bottom .logo,
+  .footer-bottom .company-info {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
