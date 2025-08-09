@@ -252,7 +252,7 @@
   .teamsearch-container {
     background-image: none;
     background-color: black;
-    height: 100%;
+    flex: 1;
   }
   .teamsearch-cubeContainer {
     display: flex;
