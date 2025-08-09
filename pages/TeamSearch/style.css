@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+}
+
 .teamsearch-container {
-  height: 100vh;
+  height: 94vh;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-image: url(/assets/img/Mainimage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: white;
+  font-family: "MaruBuri";
 }
 
 .teamsearch-nav {
@@ -11,12 +20,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: clamp(50px, 10vh, 70px);
+  height: clamp(50px, 10vh, 66px);
   box-shadow: 0px 0px 10px 0px #ddd;
+  background-color: black;
+}
+
+.teamsearch-nav {
+  max-height: 6vh;
+}
+
+.teamsearch-nav a {
+  width: 40px;
+  height: 40px;
 }
 
 .teamsearch-logo {
-  height: 100%;
+  height: 40px;
 }
 
 .teamsearch-navItem {
@@ -50,6 +69,7 @@
   display: flex;
   flex-direction: column;
   margin: 1em 0;
+
   position: relative;
 }
 
@@ -90,11 +110,12 @@
 }
 
 .teamsearch-filterList li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid whitesmoke;
   width: 80px;
+  padding: 0.2em 0;
   z-index: 3;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-align: center;
   cursor: pointer;
 }
@@ -137,7 +158,6 @@
   justify-content: center;
   width: clamp(150px, 14vh, 200px);
   position: relative;
-  z-index: 1;
 }
 
 .cube-item-name {
@@ -152,6 +172,7 @@
 .cube-item img {
   width: 100%;
   height: 100%;
+  /* object-fit: contain; */
   object-fit: cover;
   filter: brightness(0.7);
   transition: all 0.5s ease;
@@ -168,8 +189,10 @@
   transition: opacity 0.3s ease;
   position: absolute;
   bottom: 0;
-  background-color: red;
+  background-color: whitesmoke;
   width: 100%;
+  color: #333;
+  display: none;
 }
 
 .cube-item:hover .cube-item-info {
@@ -180,7 +203,7 @@
 .cube-category {
   width: 50px;
   height: 30px;
-  box-shadow: 0px 0px 10px 1px black;
+  /* box-shadow: 0px 0px 10px 1px black; */
   position: absolute;
   top: 50;
   left: 50%;
@@ -202,7 +225,59 @@
   border: 1px solid #ddd;
   padding: 0.5em;
   box-shadow: 0px 0px 5px 1px #ddd;
+  background-color: black;
+}
+
+.siteInfo-mobile {
+  display: none;
+}
+
+@media (min-width: 2560px) {
+  .teamsearch-filter {
+    top: 3%;
+  }
+  .teamsearch-cubeContainer {
+    margin: 5em 0;
+  }
 }
 
 @media screen and (max-width: 430px) {
+  .teamsearch-container {
+    background-image: none;
+    background-color: black;
+    height: 100%;
+  }
+  .teamsearch-cubeContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teamsearch-navItem {
+    gap: 2em;
+  }
+
+  .teamsearch-navItem input {
+    width: 200px;
+    border-radius: 20px;
+    padding-left: 2em;
+    border: 1px solid #ddd;
+  }
+
+  .teamsearch-navItem input::placeholder {
+    font-size: 0.875em;
+  }
+
+  .siteInfo-mobile {
+    display: block;
+    justify-items: flex-start;
+  }
+
+  .teamsearch-siteInfo p {
+    margin: 0;
+    font-size: 0.875em;
+  }
+
+  .siteInfo-desktop {
+    display: none;
+  }
 }
