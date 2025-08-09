@@ -3,8 +3,13 @@
   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
 }
 
+.teamsearchpage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .teamsearch-container {
-  height: 94vh;
   display: flex;
   flex-direction: column;
   background-image: url(/assets/img/Mainimage.png);
@@ -13,6 +18,7 @@
   background-position: center;
   color: white;
   font-family: "MaruBuri";
+  flex: 1;
 }
 
 .teamsearch-nav {
@@ -26,7 +32,7 @@
 }
 
 .teamsearch-nav {
-  max-height: 6vh;
+  max-height: 66px;
 }
 
 .teamsearch-nav a {
@@ -36,6 +42,7 @@
 
 .teamsearch-logo {
   height: 40px;
+  margin-left: 24px;
 }
 
 .teamsearch-navItem {
@@ -245,7 +252,7 @@
   .teamsearch-container {
     background-image: none;
     background-color: black;
-    height: 100%;
+    flex: 1;
   }
   .teamsearch-cubeContainer {
     display: flex;
